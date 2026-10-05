@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6 Bài Tập Thiết Kế Web</title>
+<style>
+body{font-family:sans-serif;margin:40px;background:#f8f9fa;color:#333}h2{border-bottom:2px solid #ddd;padding-bottom:10px;margin-top:40px}
+.fab-btn{position:fixed;bottom:20px;right:20px;background:#ff4757;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.3);animation:pulse 1.5s infinite;z-index:1000}
+@keyframes pulse{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,71,87,0.7)}70%{transform:scale(1.05);box-shadow:0 0 0 15px rgba(255,71,87,0)}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(255,71,87,0)}}
+.flip-card{background:transparent;width:300px;height:200px;perspective:1000px;margin:20px 0}.flip-card-inner{position:relative;width:100%;height:100%;text-align:center;transition:transform 0.6s;transform-style:preserve-3d}.flip-card:hover .flip-card-inner{transform:rotateY(180deg)}.flip-card-front,.flip-card-back{position:absolute;width:100%;height:100%;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.2)}.flip-card-front{background:#2ed573;color:#fff}.flip-card-back{background:#1e90ff;color:#fff;transform:rotateY(180deg)}
+.typing-text{font-family:monospace;font-size:24px;border-right:3px solid orange;white-space:nowrap;overflow:hidden;width:26ch;animation:typing 3s steps(26) infinite,blink .5s step-end infinite}
+@keyframes typing{from{width:0}to{width:26ch}}@keyframes blink{from,to{border-color:transparent}50%{border-color:orange}}
+.parallax-banner{background-image:url('https://picsum.photos/1920/1080');min-height:300px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;display:flex;justify-content:center;align-items:center;color:#fff;text-shadow:2px 2px 4px rgba(0,0,0,0.7)}
+.hamburger-menu{width:40px;height:30px;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;margin:20px 0}.bar{height:4px;width:100%;background:#333;border-radius:2px;transition:.4s}
+.hamburger-menu.active .bar1{transform:translateY(13px) rotate(45deg)}.hamburger-menu.active .bar2{opacity:0}.hamburger-menu.active .bar3{transform:translateY(-13px) rotate(-45deg)}
+.skill-box{width:300px}.skill-bar{background:#e0e0e0;border-radius:10px;height:15px;width:100%;margin-bottom:20px;overflow:hidden}.skill-per{height:100%;background:#3498db;border-radius:10px;width:0;animation:loadSkill 2s ease-in-out forwards}
+.skill-per.html{width:90%}.skill-per.css{width:85%}@keyframes loadSkill{from{width:0%}}
+</style>
+</head>
+<body>
+<h1>Tổng Hợp 6 Bài Tập Thiết Kế Web</h1>
+
+<h2>Bài 1: Floating Action Button (FAB)</h2>
+<a href="#" class="fab-btn">📞 Liên hệ</a>
+
+<h2>Bài 2: Card Flip Effect</h2>
+<div class="flip-card"><div class="flip-card-inner"><div class="flip-card-front"><h3>Nguyễn Văn A</h3><p>Frontend Developer</p></div><div class="flip-card-back"><h3>Liên hệ</h3><p>Email: nva@example.com</p></div></div></div>
+
+<h2>Bài 3: Typing Effect</h2>
+<p class="typing-text">Tôi là một Web Developer...</p>
+
+<h2>Bài 4: Parallax Image</h2>
+<div class="parallax-banner"><h1>Banner Parallax</h1></div>
+
+<h2>Bài 5: Modern Hamburger Menu (Click vào menu bên dưới)</h2>
+<div class="hamburger-menu" onclick="this.classList.toggle('active')"><div class="bar bar1"></div><div class="bar bar2"></div><div class="bar bar3"></div></div>
+
+<h2>Bài 6: Skill Bar Animation</h2>
+<div class="skill-box"><p>HTML: 90%</p><div class="skill-bar"><div class="skill-per html"></div></div><p>CSS: 85%</p><div class="skill-bar"><div class="skill-per css"></div></div></div>
+
+</body>
+</html>
+git push 
+everything up-to-date
